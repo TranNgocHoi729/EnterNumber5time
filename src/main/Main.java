@@ -1,23 +1,16 @@
-
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package main;
 
-import com.xtel.array.Array;
-import com.xtel.validateInput.ValidateInput;
-import com.xtel.validateInput.ValidateInteger;
-import com.xtel.array.IArray;
 /**
- * @author Tran Ngoc Hoi 
- * Create at : 26/12/2019
+ *
+ * @author Administrator
  */
 public class Main {
     public static void main(String[] args) {
-        ValidateInteger validate = new ValidateInput();
-        int[] create_array;
-        IArray arr = new Array(validate);
-        create_array = arr.addArray();
-        SubClassOfMain subclassForSort = new SubClassOfMain(validate);
-        subclassForSort.sort(create_array);
-        arr.printAray();
+        new SubClass().EnterSameNumber();
     }
-
 }
